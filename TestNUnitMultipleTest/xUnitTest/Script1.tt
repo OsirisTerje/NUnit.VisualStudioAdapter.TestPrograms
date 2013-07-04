@@ -1,0 +1,37 @@
+<#@ template language="C#" debug="True" #>
+<#@ output extension="cs" #>
+<#@ include file="T4Toolbox.tt" #>
+<#
+// <copyright file="Script1.tt" company="Microsoft">
+//  Copyright © Microsoft. All Rights Reserved.
+// </copyright>
+#>
+using Xunit;
+namespace MultiTesting41
+{
+<# for (int j=0; j<500; j++)
+{ #>
+
+public class xUnitTest<#=j#>
+{
+   
+<#
+for (int i=0;i<20;i++)
+{
+    #>
+	  [Fact]
+	  public void Test<#=i#>()
+	  {
+	      Assert.Equal(<#=i#>,<#=i*(1+i%2)#>);
+	  }
+	<#
+
+}
+#>
+}  // Class
+<#
+}  
+#>
+}  // Namespace
+<#
+#>
