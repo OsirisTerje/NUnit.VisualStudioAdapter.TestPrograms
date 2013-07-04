@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest2", "ClassLibrary3\NUnitTest2.csproj", "{7A23A0CC-F7DC-4048-A7B7-0A30AA1F372C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest2", "NUnitTest2\NUnitTest2.csproj", "{7A23A0CC-F7DC-4048-A7B7-0A30AA1F372C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsTest1", "MsTest1\MsTest1.csproj", "{A9A1B112-B31E-4EA1-BC99-84E5F5A18AE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest1", "ClassLibrary2\NUnitTest1.csproj", "{A9264DA0-D47F-448F-A947-8E5C2CA09407}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTest1", "NUnitTest1\NUnitTest1.csproj", "{A9264DA0-D47F-448F-A947-8E5C2CA09407}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnitTest", "xUnitTest\xUnitTest.csproj", "{B1A85878-2C25-4423-ADB6-596F458135F1}"
 EndProject
