@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLDIR">
+            <Component Id="cmp2BFBA8ABCC59DBEF20D0309577AB5352" Guid="*">
+                <File Id="fil7BB47EC9741FC8B1D80A80DFE9B4BB99" KeyPath="yes" Source="$(var.AppProjectDir)\SomeExecutable.exe" />
+            </Component>
+            <Component Id="cmpF9948252685232C5356BB143B22612C7" Guid="*">
+                <File Id="fil5CB4A1429875642B95399F022659AE7B" KeyPath="yes" Source="$(var.AppProjectDir)\SomeExecutable.exe.config" />
+            </Component>
+            <Component Id="cmpF98578C0777ED723052D46A088A6534C" Guid="*">
+                <File Id="fil794AD19DFD3975ECDE03BB48D43CE1A2" KeyPath="yes" Source="$(var.AppProjectDir)\SomeExecutable.pdb" />
+            </Component>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="Wix.Generated_Project">
+            <ComponentRef Id="cmp2BFBA8ABCC59DBEF20D0309577AB5352" />
+            <ComponentRef Id="cmpF9948252685232C5356BB143B22612C7" />
+            <ComponentRef Id="cmpF98578C0777ED723052D46A088A6534C" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

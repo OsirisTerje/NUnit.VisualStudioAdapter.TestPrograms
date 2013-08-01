@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1000]C:\TFSAZ\BlogCode\TestUnitTestingAndTraitsWithNuGet\TUTAT.nunit</TopNode>
+  <SelectedNode>[0-1001]NUnit.test.NUnitGeneric&lt;T&gt;</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1000]C:\TFSAZ\BlogCode\TestUnitTestingAndTraitsWithNuGet\TUTAT.nunit" Expanded="true" />
+    <Node UniqueName="[0-1012]C:\TFSAZ\BlogCode\TestUnitTestingAndTraitsWithNuGet\NUnit.test\bin\Debug\NUnit.test.dll" Expanded="true" />
+    <Node UniqueName="[0-1013]NUnit" Expanded="true" />
+    <Node UniqueName="[0-1014]NUnit.test" Expanded="true" />
+    <Node UniqueName="[0-1002]NUnit.test.NDocumentTest" Expanded="true" />
+    <Node UniqueName="[0-1015]UnitTestProject1" Expanded="true" />
+    <Node UniqueName="[0-1005]UnitTestProject1.NUnitTest1" Expanded="true" />
+    <Node UniqueName="[0-1009]UnitTestProject1.NUnitTest10" Expanded="true" />
+  </Nodes>
+</VisualState>

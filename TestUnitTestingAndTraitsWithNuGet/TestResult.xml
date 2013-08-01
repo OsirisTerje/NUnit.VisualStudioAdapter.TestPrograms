@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\TFSAZ\BlogCode\TestUnitTestingAndTraitsWithNuGet\TUTAT.nunit" total="8" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2013-08-01" time="12:03:52">
+  <environment nunit-version="2.6.2.12296" clr-version="2.0.50727.5472" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.2\bin" machine-name="TERJE-PC" user="Terje" user-domain="Terje-PC" />
+  <culture-info current-culture="nb-NO" current-uiculture="en-US" />
+  <test-suite type="Project" name="C:\TFSAZ\BlogCode\TestUnitTestingAndTraitsWithNuGet\TUTAT.nunit" executed="True" result="Failure" success="False" time="0.062" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\TFSAZ\BlogCode\TestUnitTestingAndTraitsWithNuGet\NUnit.test\bin\Debug\NUnit.test.dll" executed="True" result="Failure" success="False" time="0.061" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="NUnit" executed="True" result="Failure" success="False" time="0.014" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="test" executed="True" result="Failure" success="False" time="0.014" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="NDocumentTest" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                    <results>
+                      <test-case name="NUnit.test.NDocumentTest.NameTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="NUnit.test.NDocumentTest.NUnitGeneric`1.TestCreate" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="GenericFixture" name="NUnitGeneric&lt;T&gt;" executed="False" result="NotRunnable">
+                    <reason>
+                      <message><![CDATA[Generic fixture has no type arguments provided]]></message>
+                    </reason>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="Namespace" name="UnitTestProject1" executed="True" result="Failure" success="False" time="0.044" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="NUnitTest1" executed="True" result="Failure" success="False" time="0.015" asserts="0">
+                <results>
+                  <test-case name="UnitTestProject1.NUnitTest1.TestMethodBN1" executed="True" result="Success" success="True" time="0.000" asserts="1">
+                    <categories>
+                      <category name="CI" />
+                    </categories>
+                    <properties>
+                      <property name="Priority" value="2" />
+                      <property name="Runningtime" value="Short" />
+                      <property name="Owner" value="Terje" />
+                    </properties>
+                  </test-case>
+                  <test-case name="UnitTestProject1.NUnitTest1.TestMethodBN2" executed="True" result="Success" success="True" time="0.001" asserts="1">
+                    <categories>
+                      <category name="CI" />
+                    </categories>
+                    <properties>
+                      <property name="Priority" value="1" />
+                    </properties>
+                  </test-case>
+                  <test-case name="UnitTestProject1.NUnitTest1.TestMethodBN3" executed="True" result="Success" success="True" time="0.000" asserts="1">
+                    <categories>
+                      <category name="CI" />
+                    </categories>
+                    <properties>
+                      <property name="Priority" value="1" />
+                    </properties>
+                  </test-case>
+                  <test-case name="UnitTestProject1.NUnitTest1.TestMethodNOutput" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                    <failure>
+                      <message><![CDATA[System.Exception : Test aborted intentionally]]></message>
+                      <stack-trace><![CDATA[at UnitTestProject1.NUnitTest1.TestMethodNOutput() in c:\TFSAZ\BlogCode\TestUnitTestingAndTraitsWithNuGet\NUnit.test\NUnitTest1.cs:line 51
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="NUnitTest10" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                <categories>
+                  <category name="CI" />
+                </categories>
+                <results>
+                  <test-case name="UnitTestProject1.NUnitTest10.TestMethodBN11" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="UnitTestProject1.NUnitTest10.TestMethodBN12" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

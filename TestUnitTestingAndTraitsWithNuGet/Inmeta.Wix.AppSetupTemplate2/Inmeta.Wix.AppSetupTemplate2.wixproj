@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>3.5</ProductVersion>
+    <ProjectGuid>2d68840b-5c4f-456a-a55b-9cc59b51f4f8</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>Inmeta.Wix.AppSetupTemplate2</OutputName>
+    <OutputType>Package</OutputType>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>Debug;AppProjectDir=$(SolutionDir)SomeExecutable\bin\Debug</DefineConstants>
+    <SuppressValidation>True</SuppressValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>Release;AppProjectDir=$(SolutionDir)SomeExecutable\bin\Release</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="MyUI.wxs" />
+    <Compile Include="Product.wxs" />
+    <Compile Include="Wix.Generated.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Conditions.wxi" />
+    <Content Include="def.wxi" />
+    <Content Include="Settings.wxi" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="English.wxl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixUIExtension">
+      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+      <Name>WixUIExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SomeExecutable\SomeExecutable.csproj">
+      <Name>SomeExecutable</Name>
+      <Project>{dbd676e9-fc78-4c3f-ac17-762115188f8a}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLDIR</RefTargetDir>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(WixTargetsPath)" />
+  <Target Name="BeforeBuild" Condition=" '$(Configuration)' != 'DebugLocal' ">
+    <MSBuild Projects="%(ProjectReference.FullPath)" Targets="Build" Properties="Configuration=$(Configuration);Platform=$(Platform)" />
+    <PropertyGroup>
+      <LinkerBaseInputPaths>%(ProjectReference.RootDir)%(ProjectReference.Directory)bin\$(Configuration)\</LinkerBaseInputPaths>
+    </PropertyGroup>
+    <Exec Command="attrib -r &quot;$(MSBuildThisFileDirectory)Wix.Generated.wxs&quot;" />
+    <HeatDirectory OutputFile="Wix.Generated.wxs" Directory="%(ProjectReference.RootDir)%(ProjectReference.Directory)bin\$(Configuration)\" DirectoryRefId="INSTALLDIR" ComponentGroupName="Wix.Generated_Project" AutogenerateGuids="true" SuppressCom="true" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.AppProjectDir" />
+  </Target>
+</Project>
