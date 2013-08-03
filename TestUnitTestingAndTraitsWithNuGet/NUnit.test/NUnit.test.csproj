@@ -59,6 +59,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="MultipleTestsInArrays.cs" />
     <Compile Include="NUnitGeneric.cs" />
     <Compile Include="NUnitTest1.cs" />
     <Compile Include="NUnitTest10.cs" />
