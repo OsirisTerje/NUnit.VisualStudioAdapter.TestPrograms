@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20617.1 PREVIEW
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeClasses2", "ClassLibrary3\SomeClasses2.csproj", "{45D73A24-51A5-456A-9F25-9A526A6AFDE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTest", "UnitTestProject1\MultiTest.csproj", "{FF6A00D6-A5B9-42D5-88F3-7944148C54C3}"
@@ -40,57 +42,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{48D045
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeExecutable", "SomeExecutable\SomeExecutable.csproj", "{DBD676E9-FC78-4C3F-AC17-762115188F8A}"
 EndProject
-Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Inmeta.Wix.AppSetupTemplate2", "Inmeta.Wix.AppSetupTemplate2\Inmeta.Wix.AppSetupTemplate2.wixproj", "{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}"
-EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 15
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://terje.tfspreview.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = WebApplication1\\WebApplication1.csproj
-		SccProjectName1 = WebApplication1
-		SccLocalPath1 = WebApplication1
-		SccProjectUniqueName2 = UnitTest1\\UnitTest1.vcxproj
-		SccProjectName2 = UnitTest1
-		SccLocalPath2 = UnitTest1
-		SccProjectUniqueName3 = ManCPPUnitTest\\ManCPPUnitTest.vcxproj
-		SccProjectName3 = ManCPPUnitTest
-		SccLocalPath3 = ManCPPUnitTest
-		SccProjectUniqueName4 = xUnit.Test\\xUnit.Test.csproj
-		SccProjectName4 = xUnit.Test
-		SccLocalPath4 = xUnit.Test
-		SccProjectUniqueName5 = NUnit.test\\NUnit.test.csproj
-		SccProjectName5 = NUnit.test
-		SccLocalPath5 = NUnit.test
-		SccProjectUniqueName6 = Win32Project1\\Win32Project1.vcxproj
-		SccProjectName6 = Win32Project1
-		SccLocalPath6 = Win32Project1
-		SccProjectUniqueName7 = UnitTestProject1\\MultiTest.csproj
-		SccProjectName7 = UnitTestProject1
-		SccLocalPath7 = UnitTestProject1
-		SccProjectUniqueName8 = SomeClasses4\\SomeClasses4.csproj
-		SccProjectName8 = SomeClasses4
-		SccLocalPath8 = SomeClasses4
-		SccProjectUniqueName9 = UnitTestForNet2\\UnitTestForNet2.csproj
-		SccProjectName9 = UnitTestForNet2
-		SccLocalPath9 = UnitTestForNet2
-		SccProjectUniqueName10 = ClassLibrary3\\SomeClasses2.csproj
-		SccProjectName10 = ClassLibrary3
-		SccLocalPath10 = ClassLibrary3
-		SccProjectUniqueName11 = NUnitTestForNet20\\NUnitTestForNet20.csproj
-		SccProjectName11 = NUnitTestForNet20
-		SccLocalPath11 = NUnitTestForNet20
-		SccProjectUniqueName12 = NUnitWithOddProperties\\NUnitWithOddProperties.Test.csproj
-		SccProjectName12 = NUnitWithOddProperties
-		SccLocalPath12 = NUnitWithOddProperties
-		SccProjectUniqueName13 = SomeExecutable\\SomeExecutable.csproj
-		SccProjectName13 = SomeExecutable
-		SccLocalPath13 = SomeExecutable
-		SccProjectUniqueName14 = Inmeta.Wix.AppSetupTemplate2\\Inmeta.Wix.AppSetupTemplate2.wixproj
-		SccProjectName14 = Inmeta.Wix.AppSetupTemplate2
-		SccLocalPath14 = Inmeta.Wix.AppSetupTemplate2
-	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = TestUnitTestingAndTraits1.vsmdi
 	EndGlobalSection
@@ -270,21 +222,6 @@ Global
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Release|Win32.ActiveCfg = Release|Any CPU
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Release|x86.ActiveCfg = Release|Any CPU
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Any CPU.Build.0 = Debug|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Win32.ActiveCfg = Debug|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Win32.Build.0 = Debug|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|x86.ActiveCfg = Debug|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|x86.Build.0 = Debug|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Any CPU.ActiveCfg = Release|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Mixed Platforms.Build.0 = Release|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Win32.ActiveCfg = Release|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Win32.Build.0 = Release|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|x86.ActiveCfg = Release|x86
-		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
