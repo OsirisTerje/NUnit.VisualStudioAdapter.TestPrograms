@@ -43,6 +43,17 @@ namespace UnitTestProject1
         }
 
         [Test]
+        [Category("New")]
+        [Priority(1)]
+        public void TestMethodBN4()
+        {
+            var sut = new SomeClasses.VerySimpleMath();
+            int result = sut.Add(2, 3);
+            Assert.AreEqual(result, 5);
+        }
+
+
+        [Test]
         public void TestMethodNOutput()
         {
             Console.WriteLine("Testing Console.Write");

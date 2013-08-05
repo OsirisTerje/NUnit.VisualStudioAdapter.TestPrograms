@@ -66,6 +66,14 @@ namespace UnitTestProject1
            
         }
 
+        [TestCategory("New")]
+        [TestMethod]
+        public void TestMethodMs6()
+        {
+            Assert.IsTrue(true);
+        }
+
+
         [TestMethod]
         [Ignore]
         [TestCategory("CI")]
