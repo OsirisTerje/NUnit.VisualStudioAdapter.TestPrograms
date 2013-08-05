@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="ConcreteImplementationsOfInterface.cs" />
     <Compile Include="MultipleTestsInArrays.cs" />
+    <Compile Include="NUnitExplicit.cs" />
     <Compile Include="NUnitGeneric.cs" />
     <Compile Include="NUnitTest1.cs" />
     <Compile Include="NUnitTest10.cs" />
