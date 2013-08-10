@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace MultiTest
 {
     [TestClass]
-    public class UnitTest2
+    public class AsyncMS
     {
         [TestCategory("Async")]
         [TestMethod]
