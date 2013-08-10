@@ -59,6 +59,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="AsyncX.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XUnitTest.cs" />
     <Compile Include="XUnitTest1.cs" />
