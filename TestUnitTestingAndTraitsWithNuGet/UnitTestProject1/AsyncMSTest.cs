@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Threading.Tasks;
 
 namespace MultiTest
 {
@@ -8,7 +9,7 @@ namespace MultiTest
     {
         [TestCategory("Async")]
         [TestMethod]
-        public async void AsyncTestMS1()
+        public async Task AsyncTestMS1()
         {
             Assert.IsTrue(true);
         }
