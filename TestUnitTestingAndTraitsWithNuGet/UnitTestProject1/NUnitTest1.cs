@@ -27,7 +27,7 @@ namespace UnitTestProject1
             }
 
             /// <summary>
-            /// Some comment from VS 2013
+            /// Some comment from VS 2012
             /// </summary>
             [Test]
             [CI]
