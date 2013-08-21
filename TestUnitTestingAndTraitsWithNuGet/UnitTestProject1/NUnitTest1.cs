@@ -26,6 +26,9 @@ namespace UnitTestProject1
                 Assert.AreEqual(result, 6);
             }
 
+            /// <summary>
+            /// Some comment from 2012
+            /// </summary>
             [Test]
             [CI]
             [Property("Priority", "1")]
