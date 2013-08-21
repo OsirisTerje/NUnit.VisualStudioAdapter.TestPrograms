@@ -39,6 +39,9 @@ namespace UnitTestProject1
                 Assert.AreEqual(result, 5);
             }
 
+            /// <summary>
+            /// Second test
+            /// </summary>
             [Test]
             [Priority(1)]
             public void TestMethodN3()
