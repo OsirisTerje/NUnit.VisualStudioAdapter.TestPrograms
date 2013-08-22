@@ -1,12 +1,9 @@
 ﻿using System;
-using System.IO;
 using System.Diagnostics;
+using NUnit.Framework;
 
-namespace UnitTestProject1
+namespace NUnit.test
 {
-
-    using NUnit.Framework;
-
     [TestFixture]
     public class NUnitTest1
     {
@@ -54,6 +51,7 @@ namespace UnitTestProject1
 
 
         [Test]
+        [Explicit]
         public void TestMethodNOutput()
         {
             Console.WriteLine("Testing Console.Write");
