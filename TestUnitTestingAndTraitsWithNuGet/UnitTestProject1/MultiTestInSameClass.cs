@@ -14,9 +14,6 @@ namespace MultiTest
             Assert.IsTrue(true);
         }
 
-        /// <summary>
-        /// NUnit test in common test class
-        /// </summary>
         [NUnit.Framework.Test]
         public void MethodN1()
         {
