@@ -1,6 +1,6 @@
 <#@ template language="C#" debug="True" #>
 <#@ output extension="cs" #>
-<#@ include file="T4Toolbox.tt" #>
+
 <#
 // <copyright file="Script1.tt" company="Microsoft">
 //  Copyright © Microsoft. All Rights Reserved.
@@ -9,7 +9,7 @@
 using NUnit.Framework;
 namespace MultiTesting31
 {
-<# for (int j=0; j<10; j++)
+<# for (int j=0; j<100; j++)
 { #>
 [TestFixture]
 public class NUnitTest<#=j#>
