@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeClasses2", "ClassLibrary3\SomeClasses2.csproj", "{45D73A24-51A5-456A-9F25-9A526A6AFDE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTest", "UnitTestProject1\MultiTest.csproj", "{FF6A00D6-A5B9-42D5-88F3-7944148C54C3}"
@@ -42,10 +44,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeExecutable", "SomeExecu
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Inmeta.Wix.AppSetupTemplate2", "Inmeta.Wix.AppSetupTemplate2\Inmeta.Wix.AppSetupTemplate2.wixproj", "{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Issues", "Issues", "{C9EE17E3-1011-4D28-A860-2826E869CF5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Issue15", "Issue15\Issue15.csproj", "{0A8D607A-D35B-4D9C-9FFD-382EF8851846}"
+EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = TestUnitTestingAndTraits1.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -237,9 +240,27 @@ Global
 		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Win32.Build.0 = Release|x86
 		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|x86.ActiveCfg = Release|x86
 		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|x86.Build.0 = Release|x86
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Release|Win32.ActiveCfg = Release|Any CPU
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A8D607A-D35B-4D9C-9FFD-382EF8851846} = {C9EE17E3-1011-4D28-A860-2826E869CF5C}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TestUnitTestingAndTraits1.vsmdi
 	EndGlobalSection
 	GlobalSection(NDepend) = preSolution
 		Project = ".\TestUnitTestingAndTraits.ndproj"
