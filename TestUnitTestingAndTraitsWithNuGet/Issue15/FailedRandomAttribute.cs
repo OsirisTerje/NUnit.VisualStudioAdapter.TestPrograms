@@ -10,7 +10,7 @@ using NUnit.Framework;
 namespace Issue15
 {
     [AttributeUsage(AttributeTargets.Parameter, AllowMultiple = false, Inherited = false)]
-    public class AnyAttribute : ParameterDataAttribute
+    public class AnyFAttribute : ParameterDataAttribute
     {
         public override IEnumerable GetData(ParameterInfo parameter)
         {
@@ -18,14 +18,17 @@ namespace Issue15
             {
                 return new[] { 122 };
             }
-            return new[] { "a" };
+            else
+            {
+                return new[] { "a" + new Random().Next() }; //______ONLY CHANGE________!
+            }
         }
     }
 
-    public class Class1234
+    public class ClassFail
     {
         [Test]
-        public void ShouldBehavior([Any] int a, [Any] string b)
+        public void ShouldBEHAVIOR([AnyF] int a, [AnyF] string b)
         {
             Assert.Fail("FAILED!");
         }
