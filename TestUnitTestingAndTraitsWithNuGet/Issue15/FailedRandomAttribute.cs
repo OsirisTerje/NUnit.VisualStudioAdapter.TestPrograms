@@ -18,10 +18,7 @@ namespace Issue15
             {
                 return new[] { 122 };
             }
-            else
-            {
-                return new[] { "a" + new Random().Next() }; //______ONLY CHANGE________!
-            }
+            return new[] { "a" + new Random().Next() }; //______ONLY CHANGE________!
         }
     }
 
