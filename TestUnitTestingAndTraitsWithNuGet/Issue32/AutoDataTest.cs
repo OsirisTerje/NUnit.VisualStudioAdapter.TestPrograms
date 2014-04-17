@@ -31,6 +31,13 @@ namespace Issue32
             
         }
 
+        [Theory,AutoMoqData]
+        public void TestInt(int expected)
+        {
+            Assert.IsTrue(true);
+        }
+
+
         [Test]
         public void Test1()
         {
