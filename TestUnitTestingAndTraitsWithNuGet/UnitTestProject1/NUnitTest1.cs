@@ -23,7 +23,7 @@ namespace UnitTestProject1
                 Console.WriteLine("NUnit console writeline");
                 var sut = new SomeClasses.VerySimpleMath();
                 int result = sut.Add(2, 3);
-                Assert.AreEqual(result, 6);
+                Assert.AreEqual(result, 5);  // CHange to 6 in order to get a failing test to verify/debug the output statements
             }
 
             [Test]

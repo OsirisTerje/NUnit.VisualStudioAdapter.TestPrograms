@@ -98,6 +98,7 @@ namespace UnitTestProject1
             Assert.AreEqual(9,result);
         }
 
+        [ExpectedException(typeof(Exception))]
         [TestMethod]
         public void TestMethodMSOutput1()
         {

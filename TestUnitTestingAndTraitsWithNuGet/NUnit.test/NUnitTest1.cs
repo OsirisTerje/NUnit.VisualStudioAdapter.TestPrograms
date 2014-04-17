@@ -52,7 +52,7 @@ namespace UnitTestProject1
             Assert.AreEqual(result, 5);
         }
 
-
+        [ExpectedException(typeof(Exception))]
         [Test]
         public void TestMethodNOutput()
         {

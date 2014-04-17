@@ -69,7 +69,7 @@ namespace UnitTestProjectX1
             Console.WriteLine("Testing Console.Write");
             Debug.WriteLine("Testing Debug.Write");
             Trace.WriteLine("Testing Trace.Write");
-            throw new Exception("Test aborted intentionally");
+        //    throw new Exception("Test aborted intentionally");
         }
 
 }
