@@ -26,6 +26,9 @@ namespace UnitTestProject1
                 Assert.AreEqual(result, 6);
             }
 
+            /// <summary>
+            /// Some comment from VS 2012
+            /// </summary>
             [Test]
             [CI]
             [Property("Priority", "1")]
@@ -36,6 +39,9 @@ namespace UnitTestProject1
                 Assert.AreEqual(result, 5);
             }
 
+            /// <summary>
+            /// Second test
+            /// </summary>
             [Test]
             [Priority(1)]
             public void TestMethodN3()

@@ -129,6 +129,7 @@
     <Compile Include="MbUnitTest.cs" />
     <Compile Include="DerivedClassTestMS.cs" />
     <Compile Include="AsyncMSTest.cs" />
+    <Compile Include="MultiTestInSameClass.cs" />
     <Compile Include="XUnitTest.cs" />
     <Compile Include="XUnitTest1.cs" />
   </ItemGroup>
