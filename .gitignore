@@ -162,3 +162,6 @@ TestUnitTestingAndTraitsWithNuGet/.nuget/NuGet.exe
 /TestUnitTestingAndTraitsWithNuGet/UnitTestForNet2/obj/Debug
 /TestUnitTestingAndTraitsWithNuGet/WebApplication1/obj/Debug
 /TestUnitTestingAndTraitsWithNuGet/xUnit.Test/obj/Debug
+*.chk
+*.jrs
+*.ide
