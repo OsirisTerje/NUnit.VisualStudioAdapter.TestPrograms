@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace NUnit.test
 {
     using NUnit.Framework;
-
+     
     
     public  class NUnitGeneric<T>  where T : class, new()
     {

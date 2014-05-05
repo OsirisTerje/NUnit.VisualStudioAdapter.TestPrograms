@@ -67,6 +67,7 @@
     <Compile Include="NUnitTest1.cs" />
     <Compile Include="NUnitTest10.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestCasesNUnit.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClassLibrary3\SomeClasses2.csproj">
