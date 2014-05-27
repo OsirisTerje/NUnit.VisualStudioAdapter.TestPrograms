@@ -240,6 +240,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NDepend) = preSolution
-		Project = ".\TestUnitTestingAndTraits.ndproj"
+		Project = ""
 	EndGlobalSection
 EndGlobal

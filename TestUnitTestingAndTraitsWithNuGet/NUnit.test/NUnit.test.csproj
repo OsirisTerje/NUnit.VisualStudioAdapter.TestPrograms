@@ -60,6 +60,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="AsyncN.cs" />
+    <Compile Include="Categories.cs" />
     <Compile Include="ConcreteImplementationsOfInterface.cs" />
     <Compile Include="MultipleTestsInArrays.cs" />
     <Compile Include="NUnitExplicit.cs" />
