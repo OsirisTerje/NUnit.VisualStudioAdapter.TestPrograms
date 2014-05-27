@@ -41,7 +41,7 @@ namespace NUnit.Categories
         public void Test5()
         { }
 
-
+        [RequirementsSet2(new []{"R1","R2"})]
         [RequirementsSet(new[] { "1234", "2345" })]
         [Test]
         public void Test6()
@@ -82,6 +82,19 @@ namespace NUnit.Categories
             foreach (var s in array)
             {
                 Properties.Add("Requirement-" + i, s);
+                i++;
+            }
+        }
+    }
+
+    public class RequirementsSet2Attribute : PropertyAttribute
+    {
+        public RequirementsSet2Attribute(string[] array)
+        {
+            int i = 0;
+            foreach (var s in array)
+            {
+                Properties.Add("Requirement-" +  s,"");
                 i++;
             }
         }
