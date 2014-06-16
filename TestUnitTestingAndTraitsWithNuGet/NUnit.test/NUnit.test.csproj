@@ -62,6 +62,7 @@
     <Compile Include="AsyncN.cs" />
     <Compile Include="Categories.cs" />
     <Compile Include="ConcreteImplementationsOfInterface.cs" />
+    <Compile Include="DerivedTest.cs" />
     <Compile Include="Issue34.cs" />
     <Compile Include="MultipleTestsInArrays.cs" />
     <Compile Include="NUnitExplicit.cs" />
@@ -72,6 +73,10 @@
     <Compile Include="TestCasesNUnit.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BaseClassLib\BaseClassLib.csproj">
+      <Project>{92465cfe-f95f-4aa7-b055-bdde84e654b8}</Project>
+      <Name>BaseClassLib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ClassLibrary3\SomeClasses2.csproj">
       <Project>{45d73a24-51a5-456a-9f25-9a526a6afde3}</Project>
       <Name>SomeClasses2</Name>

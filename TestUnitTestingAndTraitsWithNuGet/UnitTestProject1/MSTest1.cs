@@ -99,6 +99,7 @@ namespace UnitTestProject1
         }
 
         [TestMethod]
+        [ExpectedException(typeof(Exception))]
         public void TestMethodMSOutput1()
         {
             Console.WriteLine("Testing Console.Write");
