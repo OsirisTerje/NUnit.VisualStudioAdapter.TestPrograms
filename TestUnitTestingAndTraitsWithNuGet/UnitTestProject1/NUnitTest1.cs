@@ -11,6 +11,9 @@ namespace UnitTestProject1
         [TestFixture]
         public class NUnitTest1
         {
+            /// <summary>
+            /// Change the expected to != 5 and verify manually that you get output from the debug and trace statements
+            /// </summary>
             [Test]
             [Category("CI")]
             [Property("Priority", "2")]
@@ -18,12 +21,13 @@ namespace UnitTestProject1
             [Property("Runningtime", "Short")]
             public void TestMethodN1()
             {
+                int expected = 5;
                 Debug.WriteLine("NUnit debug writeline");
                 Trace.WriteLine("NUnit trace writeline");
                 Console.WriteLine("NUnit console writeline");
                 var sut = new SomeClasses.VerySimpleMath();
                 int result = sut.Add(2, 3);
-                Assert.AreEqual(result, 5);
+                Assert.AreEqual(result, expected);
             }
 
             /// <summary>
