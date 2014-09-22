@@ -46,6 +46,8 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Inmeta.Wix.AppSetupTemplate
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseClassLib", "BaseClassLib\BaseClassLib.csproj", "{92465CFE-F95F-4AA7-B055-BDDE84E654B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleForUriChecks", "ConsoleForUriChecks\ConsoleForUriChecks.csproj", "{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -247,14 +249,23 @@ Global
 		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Release|Win32.ActiveCfg = Release|Any CPU
 		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Release|x86.ActiveCfg = Release|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Release|Win32.ActiveCfg = Release|Any CPU
+		{F54CFBCE-AFB5-45FF-87C6-5E1C181578E6}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = TestUnitTestingAndTraits1.vsmdi
-	EndGlobalSection
-	GlobalSection(NDepend) = preSolution
-		Project = ""
 	EndGlobalSection
 EndGlobal
