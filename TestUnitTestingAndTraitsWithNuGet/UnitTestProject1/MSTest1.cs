@@ -98,7 +98,12 @@ namespace UnitTestProject1
             Assert.AreEqual(9,result);
         }
 
+        /// <summary>
+        /// Comment out the ExpectedException line, and verify manually that you get output from the debug and trace statements
+        /// </summary>
+        [ExpectedException(typeof(Exception))]
         [TestMethod]
+        [ExpectedException(typeof(Exception))]
         public void TestMethodMSOutput1()
         {
             Console.WriteLine("Testing Console.Write");

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace UnitTestProject1
+namespace DerivedClassTestMS
 {
     [TestClass]
     abstract public class MSUnitTestBase

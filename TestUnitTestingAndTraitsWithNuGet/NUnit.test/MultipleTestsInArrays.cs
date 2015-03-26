@@ -8,6 +8,7 @@ using NUnit.Framework;
 
 namespace NUnit.test
 {
+    [TestFixture]
     class MultipleTestsInArraysN
     {
         /// <summary>
@@ -15,6 +16,7 @@ namespace NUnit.test
         /// </summary>
         /// <param name="expectedTotal"></param>
         /// <param name="vals"></param>
+        [Test]
         [TestCase(5, new int[] { 2, 3 })]
         [TestCase(5, new int[] { 1, 2, 2 })]
         public void WithNoName(int expectedTotal, int[] vals)
@@ -29,6 +31,7 @@ namespace NUnit.test
         /// </summary>
         /// <param name="expectedTotal"></param>
         /// <param name="vals"></param>
+        [Test]
         [TestCase(5, new int[] { 2, 3 },TestName="Case A")]
         [TestCase(5, new int[] { 1, 2, 2 },TestName="Case B")]
         public void WithName(int expectedTotal, int[] vals)

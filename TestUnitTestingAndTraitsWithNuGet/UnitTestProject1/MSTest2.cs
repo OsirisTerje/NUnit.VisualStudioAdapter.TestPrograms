@@ -12,7 +12,7 @@ namespace UnitTestProject1
     public class UnitTest2
     {
 
-
+        [TestCategory("CI")]
         [TestMethod]
         public void TestMethodMs11()
         {

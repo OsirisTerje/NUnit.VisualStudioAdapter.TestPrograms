@@ -1,6 +1,8 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeClasses2", "ClassLibrary3\SomeClasses2.csproj", "{45D73A24-51A5-456A-9F25-9A526A6AFDE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiTest", "UnitTestProject1\MultiTest.csproj", "{FF6A00D6-A5B9-42D5-88F3-7944148C54C3}"
@@ -40,10 +42,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{48D045
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeExecutable", "SomeExecutable\SomeExecutable.csproj", "{DBD676E9-FC78-4C3F-AC17-762115188F8A}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Inmeta.Wix.AppSetupTemplate2", "Inmeta.Wix.AppSetupTemplate2\Inmeta.Wix.AppSetupTemplate2.wixproj", "{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseClassLib", "BaseClassLib\BaseClassLib.csproj", "{92465CFE-F95F-4AA7-B055-BDDE84E654B8}"
+EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = TestUnitTestingAndTraits1.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -94,6 +97,7 @@ Global
 		{DCB43C45-DCE2-4BA7-84A5-22D7A4EDC278}.Release|Win32.ActiveCfg = Release|Any CPU
 		{DCB43C45-DCE2-4BA7-84A5-22D7A4EDC278}.Release|x86.ActiveCfg = Release|Any CPU
 		{6969F4F7-E671-42AC-A425-A2AB4F28AC4F}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{6969F4F7-E671-42AC-A425-A2AB4F28AC4F}.Debug|Any CPU.Build.0 = Debug|Win32
 		{6969F4F7-E671-42AC-A425-A2AB4F28AC4F}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
 		{6969F4F7-E671-42AC-A425-A2AB4F28AC4F}.Debug|Win32.ActiveCfg = Debug|Win32
 		{6969F4F7-E671-42AC-A425-A2AB4F28AC4F}.Debug|Win32.Build.0 = Debug|Win32
@@ -107,6 +111,7 @@ Global
 		{6969F4F7-E671-42AC-A425-A2AB4F28AC4F}.Release|x86.ActiveCfg = Release|Win32
 		{6969F4F7-E671-42AC-A425-A2AB4F28AC4F}.Release|x86.Build.0 = Release|Win32
 		{9757CB21-B840-49A6-B057-9F322E543DD6}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{9757CB21-B840-49A6-B057-9F322E543DD6}.Debug|Any CPU.Build.0 = Debug|Win32
 		{9757CB21-B840-49A6-B057-9F322E543DD6}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
 		{9757CB21-B840-49A6-B057-9F322E543DD6}.Debug|Win32.ActiveCfg = Debug|Win32
 		{9757CB21-B840-49A6-B057-9F322E543DD6}.Debug|Win32.Build.0 = Debug|Win32
@@ -144,6 +149,7 @@ Global
 		{92B80A99-C674-4667-9FD0-1403F2E27FE6}.Release|Win32.ActiveCfg = Release|Any CPU
 		{92B80A99-C674-4667-9FD0-1403F2E27FE6}.Release|x86.ActiveCfg = Release|Any CPU
 		{934D6141-56A1-4087-B009-2F195EDDA411}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{934D6141-56A1-4087-B009-2F195EDDA411}.Debug|Any CPU.Build.0 = Debug|Win32
 		{934D6141-56A1-4087-B009-2F195EDDA411}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
 		{934D6141-56A1-4087-B009-2F195EDDA411}.Debug|Win32.ActiveCfg = Debug|Win32
 		{934D6141-56A1-4087-B009-2F195EDDA411}.Debug|Win32.Build.0 = Debug|Win32
@@ -205,6 +211,7 @@ Global
 		{D072E668-FB43-41C2-83CC-E9EAE04EAC97}.Release|Win32.ActiveCfg = Release|Any CPU
 		{D072E668-FB43-41C2-83CC-E9EAE04EAC97}.Release|x86.ActiveCfg = Release|Any CPU
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Debug|Any CPU.Build.0 = Debug|x86
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Debug|Win32.ActiveCfg = Debug|Any CPU
@@ -215,8 +222,36 @@ Global
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Release|Win32.ActiveCfg = Release|Any CPU
 		{DBD676E9-FC78-4C3F-AC17-762115188F8A}.Release|x86.ActiveCfg = Release|Any CPU
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Win32.ActiveCfg = Debug|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|Win32.Build.0 = Debug|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|x86.ActiveCfg = Debug|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Debug|x86.Build.0 = Debug|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Any CPU.ActiveCfg = Release|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Mixed Platforms.Build.0 = Release|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Win32.ActiveCfg = Release|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|Win32.Build.0 = Release|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|x86.ActiveCfg = Release|x86
+		{2D68840B-5C4F-456A-A55B-9CC59B51F4F8}.Release|x86.Build.0 = Release|x86
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Release|Win32.ActiveCfg = Release|Any CPU
+		{92465CFE-F95F-4AA7-B055-BDDE84E654B8}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = TestUnitTestingAndTraits1.vsmdi
 	EndGlobalSection
 EndGlobal

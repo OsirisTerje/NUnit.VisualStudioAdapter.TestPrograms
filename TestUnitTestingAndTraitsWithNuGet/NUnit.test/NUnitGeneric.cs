@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace NUnit.test
 {
     using NUnit.Framework;
-
+     
     
     public  class NUnitGeneric<T>  where T : class, new()
     {
@@ -29,6 +29,7 @@ namespace NUnit.test
             const string Name = "A good one";
             var v = new Document(Name);
             Assert.That(v.Name,Is.EqualTo(Name));
+            //Assert.IsTrue(false,"Is testign this");
         }
     }
 
