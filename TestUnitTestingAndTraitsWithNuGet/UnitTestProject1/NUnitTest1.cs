@@ -26,7 +26,7 @@ namespace UnitTestProject1
                 Trace.WriteLine("NUnit trace writeline");
                 Console.WriteLine("NUnit console writeline");
                 var sut = new SomeClasses.VerySimpleMath();
-                int result = sut.Add(2, 3);
+                int result = sut.Add(2, 5);
                 Assert.AreEqual(result, expected);
             }
 

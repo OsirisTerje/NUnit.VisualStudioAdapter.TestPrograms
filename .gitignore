@@ -97,8 +97,11 @@ publish/
 *.Publish.xml
 
 # NuGet Packages Directory
-## TODO: If you have NuGet Package Restore enabled, uncomment the next line
-#packages/
+*.nupkg
+**/packages/*
+packages/*
+!packages/build/
+!**/packages/build/
 
 # Windows Azure Build Output
 csx
@@ -173,3 +176,5 @@ TestUnitTestingAndTraitsWithNuGet/TestUnitTestingAndTraits.ndproj
 /TestUnitTestingAndTraitsWithNuGet/WebApplication1/obj/Debug/WebApplication1.csproj.FileListAbsolute.txt
 /TestUnitTestingAndTraitsWithNuGet/xUnit.Test/obj/Debug/xUnit.Test.csproj.FileListAbsolute.txt
 TestUnitTestingAndTraitsWithNuGet/.nuget/NuGet.exe
+node_modules/
+bower_components/
