@@ -16,7 +16,7 @@
         }
 
         [Fact]
-        [CI]
+        [Trait("Category", "CI")]
         public void TestMethodX2()
         {
             var sut = new SomeClasses.VerySimpleMath();
@@ -37,7 +37,6 @@
         }
 
         [Fact]
-        [Priority(2)]
         [Trait("Category","Production")]
         public void TestMethodX4()
         {
@@ -45,21 +44,21 @@
         }
 }
 
-    public class CategoryAttribute : TraitAttribute
-    {
-        public CategoryAttribute(string value) : base("Category",value)
-        {}
-    }
+    //public class CategoryAttribute : TraitAttribute
+    //{
+    //    public CategoryAttribute(string value) : base("Category",value)
+    //    {}
+    //}
 
-    public class CIAttribute : CategoryAttribute
-    {
-        public CIAttribute() : base("CI")
-        {}
-    }
+    //public class CIAttribute : CategoryAttribute
+    //{
+    //    public CIAttribute() : base("CI")
+    //    {}
+    //}
 
-    public class Priority : TraitAttribute
-    {
-        public Priority(int value) : base("Priority",value.ToString())
-        {}
-    }
+    //public class Priority : TraitAttribute
+    //{
+    //    public Priority(int value) : base("Priority",value.ToString())
+    //    {}
+    //}
 }

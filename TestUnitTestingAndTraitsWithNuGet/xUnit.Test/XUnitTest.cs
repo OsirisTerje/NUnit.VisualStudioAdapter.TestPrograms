@@ -27,7 +27,7 @@ namespace UnitTestProjectX1
         }
 
         [Fact]
-        [CI]
+        [Trait("Category", "CI")]
         [Trait("Parallell", " ")]
         public void TestMethodBX2()
         {
@@ -55,8 +55,8 @@ namespace UnitTestProjectX1
         }
 
         [Fact]
-        [Priority(2)]
-        [CI]
+        [Trait("Priority","2")]
+        [Trait("Category","CI")]
         public void TestMethodBX4()
         {
             Assert.True(true);
@@ -74,21 +74,21 @@ namespace UnitTestProjectX1
 
 }
 
-    public class CategoryAttribute : TraitAttribute
-    {
-        public CategoryAttribute(string value) : base("Category",value)
-        {}
-    }
+    //public class CategoryAttribute : TraitAttribute
+    //{
+    //    public CategoryAttribute(string value) : base("Category",value)
+    //    {}
+    //}
 
-    public class CIAttribute : CategoryAttribute
-    {
-        public CIAttribute() : base("CI")
-        {}
-    }
+    //public class CIAttribute : CategoryAttribute
+    //{
+    //    public CIAttribute() : base("CI")
+    //    {}
+    //}
 
-    public class Priority : TraitAttribute
-    {
-        public Priority(int value) : base("Priority",value.ToString())
-        {}
-    }
+    //public class Priority : TraitAttribute
+    //{
+    //    public Priority(int value) : base("Priority",value.ToString())
+    //    {}
+    //}
 }

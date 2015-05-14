@@ -3,7 +3,7 @@
 
     using Xunit;
 
-    [CI]
+    [Trait("Category", "CI")]
     public class XUnitTest11
     {
         [Fact]
