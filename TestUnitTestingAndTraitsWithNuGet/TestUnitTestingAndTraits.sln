@@ -254,7 +254,4 @@ Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = TestUnitTestingAndTraits1.vsmdi
 	EndGlobalSection
-	GlobalSection(NDepend) = preSolution
-		Project = ""
-	EndGlobalSection
 EndGlobal
