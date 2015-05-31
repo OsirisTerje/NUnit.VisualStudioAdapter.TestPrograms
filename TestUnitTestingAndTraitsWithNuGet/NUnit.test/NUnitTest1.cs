@@ -52,13 +52,12 @@ namespace NUnit.test
 
         [Test]
         [Explicit]
-        [ExpectedException(typeof(Exception))]
         public void TestMethodNOutput()
         {
             Console.WriteLine("Testing Console.Write");
             Debug.WriteLine("Testing Debug.Write");
             Trace.WriteLine("Testing Trace.Write");
-            throw new Exception("Test aborted intentionally");
+            Assert.Throws<Exception>(delegate { throw new Exception("Test aborted intentionally"); });
         }
     }
 
