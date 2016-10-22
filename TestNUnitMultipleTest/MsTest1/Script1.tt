@@ -1,10 +1,8 @@
 <#@ template language="C#" debug="True" #>
 <#@ output extension="cs" #>
-<#@ include file="T4Toolbox.tt" #>
+
 <#
-// <copyright file="Script1.tt" company="Microsoft">
-//  Copyright © Microsoft. All Rights Reserved.
-// </copyright>
+
 #>
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace MultiTesting01
@@ -19,12 +17,12 @@ public class MSTest<#=j#>
 for (int i=0;i<20;i++)
 {
     #>
-	  [TestMethod]
-	  public void Test<#=i#>()
-	  {
-	      Assert.AreEqual(<#=i#>,<#=i*(1+i%2)#>);
-	  }
-	<#
+      [TestMethod]
+      public void Test<#=i#>()
+      {
+          Assert.AreEqual(<#=i#>,<#=i#>);
+      }
+    <#
 
 }
 #>
